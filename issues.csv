@@ -1,0 +1,37 @@
+Sprint,Issue,Responsable,Label
+Sprint 0 - Setup,Configurar repositorio,Leandro,frontend
+Sprint 0 - Setup,Configurar entorno React,Leandro,frontend
+Sprint 0 - Setup,Configurar entorno Python,Gustavo,backend
+Sprint 0 - Setup,Configurar CI basico,Ezequiel,testing
+Sprint 0 - Setup,Contratar/configurar dominio,Leandro,frontend
+Sprint 0 - Setup,Definir convencion de ramas y commits,Ezequiel,testing
+Sprint 1 - Pedidos,Modelo de datos de Pedido,Gustavo,backend
+Sprint 1 - Pedidos,Endpoint crear pedido,Gustavo,backend
+Sprint 1 - Pedidos,Endpoint listar pedidos,Gustavo,backend
+Sprint 1 - Pedidos,Formulario de carga de pedido,Leandro,frontend
+Sprint 1 - Pedidos,Vista de listado de pedidos,Leandro,frontend
+Sprint 1 - Pedidos,Tests de creacion de pedido,Ezequiel,testing
+Sprint 2 - Cobro + Stock,Modelo de datos de Stock,Gustavo,backend
+Sprint 2 - Cobro + Stock,Endpoint de cobro,Gustavo,backend
+Sprint 2 - Cobro + Stock,Descuento automatico de stock,Gustavo,backend
+Sprint 2 - Cobro + Stock,Alertas de stock bajo,Gustavo,backend
+Sprint 2 - Cobro + Stock,Pantalla de cobro,Leandro,frontend
+Sprint 2 - Cobro + Stock,Panel de stock,Leandro,frontend
+Sprint 2 - Cobro + Stock,Tests de cobro y stock,Ezequiel,testing
+Sprint 3 - Estado + Cocina,Estados de pedido,Gustavo,backend
+Sprint 3 - Estado + Cocina,Endpoint actualizar estado,Gustavo,backend
+Sprint 3 - Estado + Cocina,Pantalla de cocina,Leandro,frontend
+Sprint 3 - Estado + Cocina,Botones de cambio de estado,Leandro,frontend
+Sprint 3 - Estado + Cocina,Indicador de estado (mostrador),Leandro,frontend
+Sprint 3 - Estado + Cocina,Tests de flujo de estados,Ezequiel,testing
+Sprint 4 - Reportes + Licencia,Endpoint de metricas,Gustavo,backend
+Sprint 4 - Reportes + Licencia,Modelo de licencia/plan,Gustavo,backend
+Sprint 4 - Reportes + Licencia,Logica de bloqueo premium,Gustavo,backend
+Sprint 4 - Reportes + Licencia,Panel de reportes,Leandro,frontend
+Sprint 4 - Reportes + Licencia,Pantalla de upgrade a licencia,Leandro,frontend
+Sprint 4 - Reportes + Licencia,Tests de reportes y licencia,Ezequiel,testing
+Sprint 5 - Integracion final,Testing end-to-end completo,Ezequiel,testing
+Sprint 5 - Integracion final,Revision de bugs pendientes,Todos,testing
+Sprint 5 - Integracion final,Deploy a produccion,Ezequiel,testing
+Sprint 5 - Integracion final,Documentacion final,Ezequiel,testing
+Sprint 5 - Integracion final,Pulido de UI/UX general,Ezequiel,testing
