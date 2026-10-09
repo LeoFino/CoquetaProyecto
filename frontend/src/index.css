@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,500&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+:root{
+  --cream:#FBF4EC;
+  --plum:#4A1E2B;
+  --rose:#C9748C;
+  --gold:#C79A4B;
+  --ink:#241017;
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+
+body{
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'Space Grotesk', sans-serif;
+}
+
+/* React monta todo dentro de #root, así que acá va el layout en columna */
+#root{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
