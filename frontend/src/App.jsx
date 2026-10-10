@@ -44,18 +44,23 @@ function Login({ onLogin }) {
   const [usuario, setUsuario] = useState('')
   const [clave, setClave] = useState('')
   const [error, setError] = useState('')
-
+  const [sacudir, setSacudir] = useState(false)
+}
   const entrar = (e) => {
     e.preventDefault()
     const u = USUARIOS.find((x) => x.usuario === usuario && x.clave === clave)
     if (u) onLogin(u)
-    else setError('Usuario o clave incorrectos')
+    else {
+  setError('Usuario o clave incorrecto')
+  setSacudir(true)
+  setTimeout(() => setSacudir(false), 400)
   }
 
   return (
     <main className="login">
       <form className="card" onSubmit={entrar}>
         <div className="brand">La Coqueta</div>
+        <input className={sacudir ? 'mal' : ''} placeholder="Usuario"/>
         <input placeholder="Usuario" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
         <input type="password" placeholder="Clave" value={clave} onChange={(e) => setClave(e.target.value)} />
         <button type="submit">Ingresar</button>
