@@ -45,23 +45,25 @@ function Login({ onLogin }) {
   const [clave, setClave] = useState('')
   const [error, setError] = useState('')
   const [sacudir, setSacudir] = useState(false)
-}
+
   const entrar = (e) => {
     e.preventDefault()
     const u = USUARIOS.find((x) => x.usuario === usuario && x.clave === clave)
-    if (u) onLogin(u)
-    else {
-  setError('Usuario o clave incorrecto')
-  setSacudir(true)
-  setTimeout(() => setSacudir(false), 400)
+    if (u) {
+      onLogin(u)
+    } else {
+      setError('Usuario o clave incorrectos')
+      setSacudir(true)
+      setTimeout(() => setSacudir(false), 400)
+    }
   }
 
   return (
     <main className="login">
       <form className="card" onSubmit={entrar}>
         <div className="brand">La Coqueta</div>
-        <input className={sacudir ? 'mal' : ''} placeholder="Usuario" value={usuario} onChange={(e) => setUsuario(e.target.value)} /> 
-        <input className={sacudir ? 'mal' : ''} type="password" placeholder='Clave' value={clave} onChange={(e) => setClave(e.target.value)} />
+        <input className={sacudir ? 'mal' : ''} placeholder="Usuario" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
+        <input className={sacudir ? 'mal' : ''} type="password" placeholder="Clave" value={clave} onChange={(e) => setClave(e.target.value)} />
         <button type="submit">Ingresar</button>
         {error && <p className="error">{error}</p>}
         <p className="chico">Prueba: admin / admin123 · empleado / 1234</p>

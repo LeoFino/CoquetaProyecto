@@ -28,3 +28,33 @@ td input{width:7rem}
 .kpi strong{font-family:'Fraunces',serif;font-size:1.6rem;color:var(--plum)}
 .login{align-items:center;justify-content:center}
 .login .card{width:100%;max-width:360px;display:flex;flex-direction:column;gap:.8rem}
+
+@keyframes aparecer{
+    from{opacity:0;transform:translateY(20px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+.login .card{animation:aparecer .6s ease-out}
+.login button{transition:transform .15s, background .2s}
+.login button:hover{transform:translateY(-2px)}
+.login button:active{transform:scale(.97)}
+.login input{transition:border-color .2s, box-shadow .2s}
+.login input:focus{box-shadow:0 0 0 3px rgba(201,116,140,.3)}
+
+@keyframes fondo{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.login{
+    background:linear-gradient(120deg,var(--cream),#f3dfe3,#e8c3cd),var(--cream);
+    background-size:300% 300%;
+    animation:fondo 12s ease infinite;
+}
+
+@keyframes sacudir{
+    0%,100%{transform:translateX(0)}
+    25%{transform: translateX(-8px)}
+    75%{transform:translateX(8px)}
+}
+.login input.mal{animation:sacudir .4s;border-color:#842029}
