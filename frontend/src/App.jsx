@@ -60,9 +60,8 @@ function Login({ onLogin }) {
     <main className="login">
       <form className="card" onSubmit={entrar}>
         <div className="brand">La Coqueta</div>
-        <input className={sacudir ? 'mal' : ''} placeholder="Usuario"/>
-        <input placeholder="Usuario" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
-        <input type="password" placeholder="Clave" value={clave} onChange={(e) => setClave(e.target.value)} />
+        <input className={sacudir ? 'mal' : ''} placeholder="Usuario" value={usuario} onChange={(e) => setUsuario(e.target.value)} /> 
+        <input className={sacudir ? 'mal' : ''} type="password" placeholder='Clave' value={clave} onChange={(e) => setClave(e.target.value)} />
         <button type="submit">Ingresar</button>
         {error && <p className="error">{error}</p>}
         <p className="chico">Prueba: admin / admin123 · empleado / 1234</p>
