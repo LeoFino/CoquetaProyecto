@@ -1,9 +1,9 @@
 Sprint,Issue,Responsable,Label
 Sprint 0 - Setup,Configurar repositorio,Leandro,frontend
-Sprint 0 - Setup,Configurar entorno React,Leandro,frontend
+Sprint 0 - Setup,Configurar entorno React,Nahuel/Ezequiel,frontend
 Sprint 0 - Setup,Configurar entorno Python,Gustavo,backend
 Sprint 0 - Setup,Configurar CI basico,Ezequiel,testing
-Sprint 0 - Setup,Contratar/configurar dominio,Leandro,frontend
+Sprint 0 - Setup,Contratar/configurar dominio,Nahuel,frontend
 Sprint 0 - Setup,Definir convencion de ramas y commits,Ezequiel,testing
 Sprint 1 - Pedidos,Modelo de datos de Pedido,Gustavo,backend
 Sprint 1 - Pedidos,Endpoint crear pedido,Gustavo,backend
