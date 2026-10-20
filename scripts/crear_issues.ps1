@@ -1,9 +1,9 @@
-# ============================================================
+﻿# ============================================================
 # Script para cargar todas las tareas del proyecto a GitHub
 # Version PowerShell (no necesita bash ni WSL)
 # ============================================================
 
-$csvFile = "issues.csv"
+$csvFile = Join-Path $PSScriptRoot "issues.csv"
 
 $usuarios = @{
     "Leandro"  = "LeoFino_leandro"

@@ -14,7 +14,7 @@
 
 set -e
 
-CSV_FILE="issues.csv"
+CSV_FILE="$(dirname "${BASH_SOURCE[0]}")/issues.csv"
 
 # --- 1) Completá acá el usuario de GitHub real de cada persona ---
 declare -A USUARIOS
